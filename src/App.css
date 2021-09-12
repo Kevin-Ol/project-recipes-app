@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;700&display=swap') ;
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap') ;
+
+* {
+  border: 0;
+  font-family: Commissioner , sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.finish-recipe {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+.horizontal-slider {
+  background-color: white;
+  display: block;
+  overflow-x: scroll;
+  padding: 3vh 0;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.recomendation-card {
+  display: inline-block;
+  margin: 0 15px;
+  width: fit-content;
+}
+
+.recomendation-card img {
+  border-radius: 3px;
+  width: 150px;
+}
+
+input:checked + label {
+  text-decoration: line-through;
+}
+
+/* O código acima é necessário para os testes */
+header, footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+header > button {
+  background-color: transparent;
+  border: none;
+}
+
+@keyframes pop-in {
+
+  0% { opacity: 0;
+    transform: scale(0.5); }
+
+  100% { opacity: 1;
+    transform: scale(1); }
+}
+
+@keyframes popout {
+
+  from { transform: scale(0); }
+
+  80% { transform: scale(1.2); }
+
+  to { transform: scale(1); }
+}
+
+@keyframes popoutDetailBtn {
+
+  from { transform: scale(0); }
+
+  70% { transform: scale(0);}
+
+  80% { transform: scale(1.2); }
+
+  to { transform: scale(1); }
+}
+
+
+@keyframes fade {
+
+  0%, 50% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes slideRight {
+
+  from {
+    opacity: 0.3;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideTop {
+
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideLeft {
+
+  from {
+    opacity: 0.3;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
