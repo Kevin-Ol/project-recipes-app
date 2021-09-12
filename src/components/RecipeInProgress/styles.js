@@ -68,7 +68,8 @@ export const FinishBtn = styled.button`
   font-weight: 700;
   font-size: 16px;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: fixed;
 }
 :enabled {
@@ -82,8 +83,9 @@ export const FinishBtn = styled.button`
   font-weight: 700;
   font-size: 16px;
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
   position: fixed;
-  animation: popoutDetailBtn 2s;
+  animation: popoutDetailBtn 1s;
 }
   `;

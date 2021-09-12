@@ -51,7 +51,6 @@ function RecipeInProgress({ recipe, type }) {
         type="button"
         data-testid="finish-recipe-btn"
         disabled={ !allChecked }
-        className="finish-recipe"
         onClick={ finishRecipe }
       >
         Finalizar Receita

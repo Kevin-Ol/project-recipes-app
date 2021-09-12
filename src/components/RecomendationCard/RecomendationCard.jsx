@@ -6,7 +6,7 @@ const RecomendationCard = ({ recipe, index }) => (
   <section data-testid={ `${index}-recomendation-card` } className="recomendation-card">
     <img
       src={ recipe.strMealThumb || recipe.strDrinkThumb }
-      alt="food thumb"
+      alt={ recipe.strMealThumb ? 'food thumb' : 'drink thumb' }
     />
     <H4 data-testid={ `${index}-recomendation-title` }>
       {recipe.strMeal || recipe.strDrink}

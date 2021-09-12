@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RecomendationCard } from '../components';
 
 const UseRecomendationRecipes = (type) => {
@@ -25,10 +26,14 @@ const UseRecomendationRecipes = (type) => {
   const maxItensIndexOnScreen = 6;
   if (recipes.meals) {
     return recipes.meals.slice(0, maxItensIndexOnScreen).map((e, index) => (
-      <RecomendationCard index={ index } key={ e.idMeal } recipe={ e } />));
+      <Link key={ e.idMeal } to={ `/comidas/${e.idMeal}` }>
+        <RecomendationCard index={ index } recipe={ e } />
+      </Link>));
   } if (recipes.drinks) {
     return recipes.drinks.slice(0, maxItensIndexOnScreen).map((e, index) => (
-      <RecomendationCard index={ index } key={ e.idDrink } recipe={ e } />));
+      <Link key={ e.idDrink } to={ `/bebidas/${e.idDrink}` }>
+        <RecomendationCard index={ index } recipe={ e } />
+      </Link>));
   }
 
   return recipes;
