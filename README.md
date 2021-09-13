@@ -1,4 +1,5 @@
 # Projeto Recipes App
+![recipes-app](https://user-images.githubusercontent.com/82068881/133008026-08ff1b5f-648f-4da6-83a4-8faa45bbabaf.png)
 
 ***
 Você pode acessar o site no ar [aqui](https://kevin-ol.github.io/project-recipes-app/).
