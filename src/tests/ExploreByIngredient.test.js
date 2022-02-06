@@ -4,11 +4,11 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouterAndRedux from './renderWithRouterAndRedux';
 import App from '../App';
 
-const fetchMock = require('../../cypress/mocks/fetch');
-const mealIngredientsMock = require('../../cypress/mocks/mealIngredients');
-const mealsByIngredientMock = require('../../cypress/mocks/mealsByIngredient');
-const drinkIngredientsMock = require('../../cypress/mocks/drinkIngredients');
-const drinksByIngredientMock = require('../../cypress/mocks/drinksByIngredient');
+const fetchMock = require('./mocks/fetch');
+const mealIngredientsMock = require('./mocks/mealIngredients');
+const mealsByIngredientMock = require('./mocks/mealsByIngredient');
+const drinkIngredientsMock = require('./mocks/drinkIngredients');
+const drinksByIngredientMock = require('./mocks/drinksByIngredient');
 
 const mealPage = '/explorar/comidas/ingredientes';
 const drinkPage = '/explorar/bebidas/ingredientes';

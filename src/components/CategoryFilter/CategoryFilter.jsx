@@ -38,7 +38,7 @@ function CategoryFilter() {
       return (btnMap(firstFive));
     }
   }
-  return (<p>Carregando...</p>);
+  return (<p>Loading...</p>);
 }
 
 export default CategoryFilter;

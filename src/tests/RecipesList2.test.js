@@ -4,13 +4,13 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouterAndRedux from './renderWithRouterAndRedux';
 import App from '../App';
 
-const fetchMock = require('../../cypress/mocks/fetch');
-const mealsMock = require('../../cypress/mocks/meals');
-const beefMealsMock = require('../../cypress/mocks/beefMeals');
-const breakfastMealsMock = require('../../cypress/mocks/breakfastMeals');
-const drinksMock = require('../../cypress/mocks/drinks');
-const ordinaryDrinksMock = require('../../cypress/mocks/ordinaryDrinks');
-const cocktailDrinksMock = require('../../cypress/mocks/cocktailDrinks');
+const fetchMock = require('./mocks/fetch');
+const mealsMock = require('./mocks/meals');
+const beefMealsMock = require('./mocks/beefMeals');
+const breakfastMealsMock = require('./mocks/breakfastMeals');
+const drinksMock = require('./mocks/drinks');
+const ordinaryDrinksMock = require('./mocks/ordinaryDrinks');
+const cocktailDrinksMock = require('./mocks/cocktailDrinks');
 
 const beefFilter = 'Beef-category-filter';
 const beefItem = 'Beef and Mustard Pie';

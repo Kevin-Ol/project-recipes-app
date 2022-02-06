@@ -2,7 +2,7 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import renderWithRouterAndRedux from './renderWithRouterAndRedux';
 import App from '../App';
-import fetchMock from '../../cypress/mocks/fetch';
+import fetchMock from './mocks/fetch';
 
 const recipePhoto = 'recipe-photo';
 const recipeTitle = 'recipe-title';

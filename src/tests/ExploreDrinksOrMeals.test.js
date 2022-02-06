@@ -4,7 +4,7 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouterAndRedux from './renderWithRouterAndRedux';
 import App from '../App';
 
-const fetchMock = require('../../cypress/mocks/fetch');
+const fetchMock = require('./mocks/fetch');
 
 const exploreByIngredient = 'explore-by-ingredient';
 const exploreByArea = 'explore-by-area';

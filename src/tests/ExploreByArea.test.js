@@ -4,12 +4,12 @@ import userEvent from '@testing-library/user-event';
 import renderWithRouterAndRedux from './renderWithRouterAndRedux';
 import App from '../App';
 
-const fetchMock = require('../../cypress/mocks/fetch');
-const mealCategoriesMock = require('../../cypress/mocks/mealCategories');
-const areasMock = require('../../cypress/mocks/areas');
-const mealsMock = require('../../cypress/mocks/meals');
-const japaneseMealsMock = require('../../cypress/mocks/japaneseMeals');
-const italianMealsMock = require('../../cypress/mocks/italianMeals');
+const fetchMock = require('./mocks/fetch');
+const mealCategoriesMock = require('./mocks/mealCategories');
+const areasMock = require('./mocks/areas');
+const mealsMock = require('./mocks/meals');
+const japaneseMealsMock = require('./mocks/japaneseMeals');
+const italianMealsMock = require('./mocks/italianMeals');
 
 const firstCard = '0-recipe-card';
 const dropdown = 'explore-by-area-dropdown';
